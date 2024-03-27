@@ -1,0 +1,523 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+.container{
+     max-width: 100%;
+     margin: auto;
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* header starts here */
+ 
+header{
+    background-color: #24a19c;
+    text-align: center;
+    padding: 0 1%;
+}   
+
+.logo{
+    width: 100px;
+    height: 90px;
+    text-align: center;
+}
+
+nav ul li{
+  display: block;
+}
+ 
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    font-size: 1rem;
+   
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-family: roboto,sans-serif;
+    transition: 0.4s;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    border-radius: 10px;
+   
+}
+
+
+
+
+ 
+ 
+
+/* header ends here*/
+
+
+
+/* main starts here */
+
+/* banner section srarts here */
+
+#banner-section{
+    background-image: url(images/gazor.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner-contents{
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.banner-contents h1{
+       background-color: yellow;
+       width: 100%;
+       margin: 15px auto;
+       padding: 20px;
+       font-size: 3rem;
+       border-radius: 20px;
+       font-family: handlee,cursive;
+}
+
+
+.banner-contents p{
+    width: 300px;
+    margin: 10px auto;
+    background-color: green;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.btn{
+    width: 160px;
+    margin: 10px auto;
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    transition: .4s;
+    
+}
+.btn:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+   
+}
+
+/* banner section ends here */
+
+/* aboute us starts */
+
+.aboute-us-contents{
+    padding: 1%;
+    background-color: #060930;
+    color: white;
+    height: 450px;
+}
+
+  .aboute-us-contents{
+      text-align: center;
+  }
+
+  .aboute-us-contents h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    background-color: green;
+  }
+
+  .dottet-hr{
+    border: dotted;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+  }
+
+  .aboute-us-contents ol li{
+          font-size: 1.5rem;
+          justify-content: center;
+          margin: 10px 150px;
+          padding: 5px;
+}
+
+  .aboute-us-contents ol li:hover{
+         background-color: gray;
+         border-radius: 5px;
+}
+
+/* aboute us ends */
+
+
+/* food menu starts */
+
+ #menu-section{
+    padding: 1%;
+ }
+
+ .card-body{
+    text-align: center;
+ }
+
+ .card-body img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+
+ .item-des{
+    background-color: rgb(165, 164, 164);
+ }
+
+ .item-name{
+    background-color: green;
+    color:white;
+    padding: 10px;
+    font-size: 1.5rem;
+ }
+
+ .item-des > p{
+       font-size: 0.8rem;
+       padding: 10px;
+       font-weight: bold;
+ }
+
+ .card{
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+   
+}
+
+/* food menu ends */
+
+
+/* contact section starts */
+
+  #contact{
+    padding: 1%;
+    background-color: #595b83;
+  }   
+
+  .contact-details{
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+  }
+
+  .contact-details p, address{
+    font-size: 0.8rem;
+  }
+
+/* contact section starts */
+
+
+/* main ends here */
+
+
+/* footer starts here */
+
+footer{
+    padding: 1%;
+    color: white;
+    background: #060930;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 32px;
+}
+
+.social-menus{
+    text-align: center;
+}
+
+.pic{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.pic{
+    transition: 0.4s;
+}
+
+.pic:hover{
+    transform: scale(1.3);
+    background-color: gray;
+}
+
+/* footer ends here */
+
+
+/* small devices (portrait tablets and larg phone,576px and up) */
+
+@media (min-width: 576px) {
+    .col-sm-1{
+        width: 8.33%;
+    }
+
+    .col-sm-2{
+        width: 16.66%;
+    }
+
+    .col-sm-3{
+        width: 25%;
+    }
+
+    .col-sm-4{
+        width: 33.33%;
+    }
+
+    .col-sm-5{
+        width: 41.66%;
+    }
+
+    .col-sm-6{
+        width: 50%;
+    }
+
+    .col-sm-7{
+        width: 58.33%;
+    }
+
+    .col-sm-8{
+        width: 66.66%;
+    }
+
+    .col-sm-9{
+        width: 75%;
+    }
+
+    .col-sm-10{
+        width: 83.33%;
+    }
+
+    .col-sm-11{
+        width: 91.66%;
+    }
+
+    .col-sm-12{
+        width: 100%;
+    }
+}
+
+
+/* medium devices (portrait tablets and larg phone,768px and up) */
+
+@media (min-width: 768px) {
+    .col-md-1{
+        width: 8.33%;
+    }
+
+    .col-md-2{
+        width: 16.66%;
+    }
+
+    .col-md-3{
+        width: 25%;
+    }
+
+    .col-md-4{
+        width: 33.33%;
+    }
+
+    .col-md-5{
+        width: 41.66%;
+    }
+
+    .col-md-6{
+        width: 50%;
+    }
+
+    .col-md-7{
+        width: 58.33%;
+    }
+
+    .col-md-8{
+        width: 66.66%;
+    }
+
+    .col-md-9{
+        width: 75%;
+    }
+
+    .col-md-10{
+        width: 83.33%;
+    }
+
+    .col-md-11{
+        width: 91.66%;
+    }
+
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+
+/* large devices (portrait tablets and larg phone,992px and up) */
+
+@media (min-width: 992px) {
+
+    
+
+     .logo-div{
+        text-align: left;
+        
+     }
+
+     nav ul{
+       float: right;
+       
+     }
+
+     nav ul li{
+        display: inline-block;
+        
+     }
+
+     
+
+     nav ul li a{
+         display: inline-block;
+         transition: .4s;
+        
+}
+
+     nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius: none;
+       
+}
+
+ /* banner stars */
+
+  #banner-section{
+    position: relative;
+    height: 100vh;
+  }
+
+  .banner-contents{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+}
+
+.banner-contents h1{
+    width: 700px;
+    font-size: 3.5rem;
+}
+
+
+.banner-contents p{
+    width: 500px;
+    font-size: 2rem;
+}
+
+ /* banneer ends */
+
+/* footer starts */
+   footer p{
+    text-align: left;
+   }
+
+   footer a .pic{
+    text-align: right;
+   }
+
+/* footer ends */
+
+    .col-lg-1{
+        width: 8.33%;
+    }
+
+    .col-lg-2{
+        width: 16.66%;
+    }
+
+    .col-lg-3{
+        width: 25%;
+    }
+
+    .col-lg-4{
+        width: 33.33%;
+    }
+
+    .col-lg-5{
+        width: 41.66%;
+    }
+
+    .col-lg-6{
+        width: 50%;
+    }
+
+    .col-lg-7{
+        width: 58.33%;
+    }
+
+    .col-lg-8{
+        width: 66.66%;
+    }
+
+    .col-lg-9{
+        width: 75%;
+    }
+
+    .col-lg-10{
+        width: 83.33%;
+    }
+
+    .col-lg-11{
+        width: 91.66%;
+    }
+
+    .col-lg-12{
+        width: 100%;
+    }
+}
